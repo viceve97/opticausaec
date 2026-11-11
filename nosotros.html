@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica USA-EC | Nosotros</title>
+    <!-- Favicon SVG oficial de la óptica -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- SECCIÓN HERO / BANNER SUPERIOR CON SVG DE FONDO -->
+    <section class="relative w-full h-[420px] md:h-[480px] overflow-hidden flex flex-col justify-between">
+        <!-- Imagen SVG de fondo cubriendo todo el espacio -->
+        <img src="assets/img/fondodepantalla1_2.svg" alt="Fondo Óptica USA-EC" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='assets/img/fondodepantalla1.svg';">
+
+
+        <!-- HEADER TRANSPARENTE FLOTANTE -->
+        <header class="relative z-30 w-full px-6 py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                
+                <!-- LOGO PLANO -->
+                <div class="flex items-center">
+                    <a href="inicio.html">
+                        <img src="assets/img/logo.svg" alt="Logo Óptica USA-EC" class="h-14 md:h-20 w-auto object-contain" onerror="this.style.display='none';">
+                    </a>
+                </div>
+
+                <!-- NAVEGACIÓN ESCRITORIO -->
+                <nav class="hidden md:flex space-x-8 font-medium text-rose-950 bg-white/70 backdrop-blur-md px-6 py-2.5 rounded-full shadow-sm">
+                    <a href="inicio.html" class="hover:text-rose-900 transition">Inicio</a>
+                    <a href="nosotros.html" class="font-bold text-rose-900 border-b-2 border-rose-900 pb-0.5">Nosotros</a>
+                    <a href="catalogo.html" class="hover:text-rose-900 transition">Catálogo</a>
+                </nav>
+
+                <!-- BOTÓN MENÚ MÓVIL (Hamburguesa) -->
+                <button id="menu-btn" type="button" class="md:hidden text-rose-950 bg-white/85 backdrop-blur-md p-3 rounded-xl focus:outline-none shadow-md cursor-pointer" aria-label="Abrir menú">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- MENÚ MÓVIL DESPLEGABLE -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-xl border-b border-rose-100 py-5 px-8 flex flex-col space-y-4 font-medium text-rose-950">
+                <a href="inicio.html" class="py-2 border-b border-gray-100 hover:text-rose-900 flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Inicio</a>
+                <a href="nosotros.html" class="font-bold text-rose-900 py-2 border-b border-gray-100 flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Nosotros</a>
+                <a href="catalogo.html" class="py-2 hover:text-rose-900 flex items-center"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Catálogo</a>
+            </div>
+        </header>
+
+        <!-- CAJA DE TEXTO INSTITUCIONAL SOBRE EL FONDO -->
+        <div class="container mx-auto max-w-6xl px-4 relative z-10 mb-6">
+            <div class="bg-white/90 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-xl border border-rose-100 max-w-lg">
+                <p class="text-gray-800 text-xs sm:text-sm md:text-base font-medium leading-relaxed mb-2 md:mb-3">
+                    Mejoramos tu vista con un toque de elegancia. Para combatir la tensión ocular para mirar en todas las direcciones.
+                </p>
+                <blockquote class="text-rose-950 italic font-semibold text-xs md:text-sm border-l-4 border-rose-800 pl-3">
+                    "Los Ojos son el punto donde se mezclan Alma y Corazón"<br>
+                    <span class="text-[10px] font-normal text-gray-600">(Christian Friedrich Hebbel)</span>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTENIDO PRINCIPAL: ¿QUIÉNES SOMOS? Y SERVICIOS (Ítem 2 Integrado) -->
+    <section class="py-16 px-6 container mx-auto max-w-6xl">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            
+            <!-- Columna Izquierda: ¿Quiénes Somos? + Misión y Visión (Ítem 2) -->
+            <div>
+                <h2 class="text-3xl font-bold text-rose-950 mb-6 text-center md:text-left">¿Quiénes Somos?</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Somos una empresa en constante innovación en las tecnologías del sector visual para que todos nuestros productos y servicios estén al alcance de todos y nuestros clientes obtengan el mayor beneficio.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-8">
+                    Óptica USA-EC comprometida con la salud visual, tiene como fin brindar una óptima orientación a las necesidades visuales de las personas y contribuir con base a nuestra instrucción y aprendizaje a la paz visual de nuestros propios clientes.
+                </p>
+
+                <!-- ÍTEM 2: Misión y Visión -->
+                <div class="space-y-6 bg-rose-50/60 p-6 rounded-2xl border border-rose-100">
+                    <div>
+                        <h3 class="font-bold text-rose-950 text-lg mb-2 flex items-center">
+                            <i class="fa-solid fa-bullseye text-rose-600 mr-2"></i> Nuestra Misión
+                        </h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            Proveer soluciones ópticas integrales y exámenes visuales computarizados de alta precisión, garantizando la salud visual y el bienestar de cada paciente en Guayaquil con un servicio cálido y profesional.
+                        </p>
+                    </div>
+                    <div class="border-t border-rose-200/60 pt-4">
+                        <h3 class="font-bold text-rose-950 text-lg mb-2 flex items-center">
+                            <i class="fa-solid fa-eye text-rose-600 mr-2"></i> Nuestra Visión
+                        </h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            Consolidarnos como la óptica líder e innovadora en la ciudad, reconocida por la excelencia tecnológica en la atención visual y por ofrecer una amplia gama de productos accesibles para toda la familia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Servicios -->
+            <div>
+                <h2 class="text-3xl font-bold text-rose-950 mb-6 text-center md:text-left">Servicios</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Servicio 1 -->
+                    <div class="bg-gray-50 p-5 rounded-xl border border-gray-100 shadow-sm">
+                        <h3 class="font-bold text-rose-900 text-lg mb-2">Exámen Visual</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Una serie de pruebas que se realizan para evaluar la visión y la capacidad para enfocar y discernir objetos.</p>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="bg-gray-50 p-5 rounded-xl border border-gray-100 shadow-sm">
+                        <h3 class="font-bold text-rose-900 text-lg mb-2">Optometría</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Controlar prescripciones médicas, historial de casos, salud ocular, diagnósticos, mediciones, correcciones, entre otros.</p>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="bg-gray-50 p-5 rounded-xl border border-gray-100 shadow-sm">
+                        <h3 class="font-bold text-rose-900 text-lg mb-2">Refracción de errores</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Tipo de problema de visión que dificulta ver con claridad. Se presenta cuando la forma del ojo evita que la luz se enfoque correctamente en la retina.</p>
+                    </div>
+                    <!-- Servicio 4 -->
+                    <div class="bg-gray-50 p-5 rounded-xl border border-gray-100 shadow-sm">
+                        <h3 class="font-bold text-rose-900 text-lg mb-2">Ventas de productos</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Teniendo diferentes diseños de lentes, desde mujeres, hombres y niños. A excelente precio.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ÍTEM 3 & 4 (Libre Imaginación): Nuestro Equipo y Preguntas Frecuentes / Testimonios -->
+    <section class="py-16 px-6 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12">
+                <span class="bg-rose-100 text-rose-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Compromiso y Confianza</span>
+                <h2 class="text-3xl font-bold text-rose-950 mt-3">¿Por qué elegir Óptica USA-EC?</h2>
+                <p class="text-gray-600 text-sm mt-2 max-w-xl mx-auto">Conoce más sobre nuestro respaldo profesional y las respuestas a las dudas más comunes de nuestros pacientes.</p>
+            </div>
+
+            <!-- Grid de Valor y Equipo -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="font-bold text-rose-950 mb-2">Especialistas Calificados</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">Atención profesional y personalizada en cada diagnóstico optométrico para cuidar tu salud visual.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-glasses"></i>
+                    </div>
+                    <h3 class="font-bold text-rose-950 mb-2">Variedad y Estilo</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">Amplio catálogo de armazones modernos y lunas oftálmicas de alta tecnología adaptadas a tu presupuesto.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="font-bold text-rose-950 mb-2">Garantía y Seguimiento</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">Acompañamiento constante antes, durante y después de la entrega de tus lentes correctivos.</p>
+                </div>
+            </div>
+
+            <!-- Sección de Preguntas Frecuentes (FAQ) -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-rose-950 mb-6 text-center">Preguntas Frecuentes</h3>
+                <div class="space-y-4 text-sm">
+                    <div class="border-b border-gray-100 pb-3">
+                        <p class="font-bold text-gray-900 mb-1">¿Necesito agendar cita previa para el examen visual?</p>
+                        <p class="text-gray-600">Puedes agendar directamente a través de nuestro botón de WhatsApp para asegurarte una atención inmediata, aunque también atendemos por orden de llegada en nuestro local.</p>
+                    </div>
+                    <div class="border-b border-gray-100 pb-3">
+                        <p class="font-bold text-gray-900 mb-1">¿Cuál es el tiempo de entrega de las lunas?</p>
+                        <p class="text-gray-600">El tiempo habitual varía entre 24 a 48 horas dependiendo de la graduación y el tipo de tratamiento especializado seleccionado (Blue Block, antirreflejo, etc.).</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-900 mb-1">¿Dónde están ubicados exactamente?</p>
+                        <p class="text-gray-600">Nos encontramos en la calle Clemente Ballén 519 entre Chimborazo y Escobedo, en pleno centro de Guayaquil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTÁCTANOS Y MAPA -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Datos de Contacto y Horarios -->
+            <div>
+                <h2 class="text-3xl font-bold text-rose-950 mb-6">Contáctanos</h2>
+                <div class="space-y-4 text-gray-700 text-sm">
+                    <div class="flex items-start space-x-3">
+                        <span class="text-rose-800 font-bold mt-0.5"><i class="fa-solid fa-calendar-days"></i></span>
+                        <div>
+                            <p><strong>Lunes - Viernes:</strong> 09:00 - 18:00</p>
+                            <p><strong>Sábado:</strong> 10:00 - 17:00</p>
+                            <p><strong>Domingo:</strong> 10:00 - 17:00</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-rose-800 font-bold mt-0.5"><i class="fa-solid fa-location-dot"></i></span>
+                        <p>Clemente Ballén 519 entre Chimborazo y Escobedo, Guayaquil, Ecuador.</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-rose-800 font-bold"><i class="fa-solid fa-phone"></i></span>
+                        <p>+593 98 558 0778</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-rose-800 font-bold"><i class="fa-solid fa-envelope"></i></span>
+                        <p>usa.ec22@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa Integrado con tu Iframe -->
+            <div class="w-full h-80 rounded-2xl overflow-hidden shadow-md border border-gray-300">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.892999922458!2d-79.8838765!3d-2.1941905000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6fc1ed08cae1%3A0x8b3d849dd65aa259!2sOPTICA%20USA%20EC!5e0!3m2!1ses-419!2sec!4v1794250287581!5m2!1ses-419!2sec" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER PREMIUM DE 3 COLUMNAS -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10">
+            
+            <!-- Columna 1 -->
+            <div>
+                <img src="assets/img/logo.svg" alt="Óptica USA-EC" class="h-24 w-auto object-contain mb-4 filter brightness-200" onerror="this.onerror=null; this.style.display='none';">
+                <p class="text-gray-400 text-xs mb-4">Clemente Ballén entre Escobedo y Chimborazo, Guayaquil - Ecuador</p>
+                <p class="text-sm font-semibold text-white mb-3"><i class="fa-solid fa-phone text-rose-500 mr-2"></i> +593 98 558 0778</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="https://www.tiktok.com/@optica_usaec" target="_blank" class="bg-gray-800 hover:bg-rose-800 text-white h-9 w-9 rounded-full flex items-center justify-center transition" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/optica_usaec" target="_blank" class="bg-gray-800 hover:bg-rose-800 text-white h-9 w-9 rounded-full flex items-center justify-center transition" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/opticausaec/" target="_blank" class="bg-gray-800 hover:bg-rose-800 text-white h-9 w-9 rounded-full flex items-center justify-center transition" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 border-b border-gray-800 pb-2">Navegación e Interés</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="inicio.html" class="hover:text-rose-400 transition"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Inicio</a></li>
+                    <li><a href="nosotros.html" class="hover:text-rose-400 transition"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Nosotros</a></li>
+                    <li><a href="catalogo.html" class="hover:text-rose-400 transition"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Catálogo</a></li>
+                    <li><a href="noticias.html" class="hover:text-rose-400 transition font-medium text-rose-300"><i class="fa-solid fa-newspaper text-xs mr-2 text-rose-500"></i> Noticias de Oftalmología</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3 -->
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 border-b border-gray-800 pb-2">Formas de Pago</h4>
+                <p class="text-gray-400 text-xs mb-4">Aceptamos todas las tarjetas de crédito y débito locales e internacionales:</p>
+                <div class="grid grid-cols-4 gap-3 text-2xl text-gray-300">
+                    <div class="bg-gray-800 p-2.5 rounded-lg flex items-center justify-center" title="Visa">
+                        <i class="fa-brands fa-cc-visa text-blue-400"></i>
+                    </div>
+                    <div class="bg-gray-800 p-2.5 rounded-lg flex items-center justify-center" title="Mastercard">
+                        <i class="fa-brands fa-cc-mastercard text-red-400"></i>
+                    </div>
+                    <div class="bg-gray-800 p-2.5 rounded-lg flex items-center justify-center" title="American Express">
+                        <i class="fa-brands fa-cc-amex text-blue-300"></i>
+                    </div>
+                    <div class="bg-gray-800 p-2.5 rounded-lg flex items-center justify-center" title="Discover">
+                        <i class="fa-brands fa-cc-discover text-orange-400"></i>
+                    </div>
+                </div>
+                <p class="text-[11px] text-gray-500 mt-4">Pagos seguros directos en local y diferidos disponibles.</p>
+            </div>
+
+        </div>
+
+        <div class="container mx-auto max-w-6xl border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
+            <p>&copy; 2026 Óptica USA-EC. Todos los derechos reservados. Diseñado por: <a href="https://www.victor-farfan.com/" target="_blank" >Victor Farfán</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT MENÚ MÓVIL -->
+    <script src="assets/js/menu_responsive.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica USA-EC | Inicio</title>
+    <!-- Favicon SVG oficial de la óptica -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos de redes sociales y pagos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- SECCIÓN HERO / BANNER PRINCIPAL CON ALTURA OPTIMIZADA Y SVG DE FONDO -->
+    <section class="relative w-full h-[420px] md:h-[480px] overflow-hidden flex flex-col justify-between">
+        <!-- Imagen SVG de fondo cubriendo todo el espacio -->
+        <img src="assets/img/fondodepantalla2.svg" alt="Fondo Óptica USA-EC" class="absolute inset-0 w-full h-full object-cover z-0">
+
+    <!-- HEADER TRANSPARENTE FLOTANTE CON MENÚ RESPONSIVO -->
+        <header class="relative z-30 w-full px-6 py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                
+                <!-- LOGO PLANO -->
+                <div class="flex items-center">
+                    <a href="inicio.html">
+                        <img src="assets/img/logo.svg" alt="Logo Óptica USA-EC" class="h-14 md:h-20 w-auto object-contain" onerror="this.style.display='none';">
+                    </a>
+                </div>
+
+                <!-- NAVEGACIÓN ESCRITORIO (Oculta en móviles) -->
+                <nav class="hidden md:flex space-x-8 font-medium text-rose-950 bg-white/60 backdrop-blur-md px-6 py-2.5 rounded-full shadow-sm">
+                    <a href="index.html" class="font-bold text-rose-900 border-b-2 border-rose-900 pb-0.5">Inicio</a>
+                    <a href="nosotros.html" class="hover:text-rose-900 transition">Nosotros</a>
+                    <a href="catalogo.html" class="hover:text-rose-900 transition">Catálogo</a>
+                </nav>
+
+                <!-- BOTÓN MENÚ MÓVIL (Hamburguesa) -->
+                <button id="menu-btn" class="md:hidden text-rose-950 bg-white/70 backdrop-blur-md p-2.5 rounded-xl focus:outline-none shadow-sm" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- MENÚ MÓVIL DESPLEGABLE -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-lg border-b border-rose-100 py-4 px-6 flex flex-col space-y-3 font-medium text-rose-950">
+                <a href="index.html" class="font-bold text-rose-900 py-2 border-b border-gray-100">Inicio</a>
+                <a href="nosotros.html" class="py-2 border-b border-gray-100 hover:text-rose-900">Nosotros</a>
+                <a href="catalogo.html" class="py-2 hover:text-rose-900">Catálogo</a>
+            </div>
+        </header>
+
+        <!-- CAJA DE TEXTO INSTITUCIONAL SOBRE EL FONDO -->
+        <div class="container mx-auto max-w-6xl px-4 relative z-10 mb-6">
+            <div class="bg-white/90 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-xl border border-rose-100 max-w-lg">
+                <h1 class="text-xl md:text-2xl font-bold text-rose-950 mb-2">¿Qué lunas se adaptan a tus ojos?</h1>
+                <p class="text-gray-700 text-xs md:text-sm leading-relaxed mb-3">
+                    En nuestra óptica, ofrecemos una amplia gama de lunas oftálmicas y lunas de sol. De acuerdo a tus necesidades y según tu condición visual, te recomendaremos la opción perfecta para ti.
+                </p>
+                <blockquote class="text-rose-900 italic font-semibold text-xs md:text-sm border-l-4 border-rose-800 pl-3">
+                    "Los Ojos son el punto donde se mezclan Alma y Corazón"<br>
+                    <span class="text-[10px] font-normal text-gray-600">(Christian Friedrich Hebbel)</span>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TIPOS DE LENTES PARA TI (Más interactiva y publicitaria) -->
+    <section class="py-20 px-6 container mx-auto max-w-6xl">
+        <div class="text-center mb-12">
+            <span class="bg-rose-100 text-rose-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Tecnología Visual Avanzada</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-rose-950 mt-3">Tipos de Lentes para ti</h2>
+            <p class="text-gray-600 mt-2 max-w-xl mx-auto text-sm">Diseñadas a la medida de tu estilo de vida y necesidades ópticas específicas.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            
+            <!-- Tarjeta 1 -->
+            <div class="group bg-white border border-gray-100 rounded-2xl p-4 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-48 rounded-xl overflow-hidden mb-4 bg-rose-50 relative">
+                        <img src="assets/img/una_vida_ocupada.jfif" alt="Una vida ocupada" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x300?text=Vida+Ocupada';">
+                        <span class="absolute top-2 right-2 bg-rose-800 text-white text-[10px] font-bold px-2 py-1 rounded-md shadow">Anti-Fatiga</span>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Una vida ocupada</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-4">Lunas diseñadas para transiciones rápidas y rendimiento óptimo en movimiento.</p>
+                </div>
+                <a href="https://wa.me/593985580778?text=Hola,%20deseo%20más%20información%20sobre%20lentes%20para%20vida%20ocupada" target="_blank" class="w-full bg-rose-50 text-rose-800 hover:bg-rose-800 hover:text-white font-medium text-xs py-2.5 rounded-lg transition text-center block">
+                    Cotizar Opción
+                </a>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="group bg-white border border-gray-100 rounded-2xl p-4 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-48 rounded-xl overflow-hidden mb-4 bg-rose-50 relative">
+                        <img src="assets/img/dispositivo_moviles.jfif" alt="Uso dispositivos moviles" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x300?text=Dispositivos+Moviles';">
+                        <span class="absolute top-2 right-2 bg-blue-700 text-white text-[10px] font-bold px-2 py-1 rounded-md shadow">Blue Block</span>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Uso dispositivos móviles</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-4">Protección especializada contra la luz azul nociva de pantallas y computadoras.</p>
+                </div>
+                <a href="https://wa.me/593985580778?text=Hola,%20deseo%20más%20información%20sobre%20lentes%20para%20dispositivos%20móviles" target="_blank" class="w-full bg-rose-50 text-rose-800 hover:bg-rose-800 hover:text-white font-medium text-xs py-2.5 rounded-lg transition text-center block">
+                    Cotizar Opción
+                </a>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="group bg-white border border-gray-100 rounded-2xl p-4 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-48 rounded-xl overflow-hidden mb-4 bg-rose-50 relative">
+                        <img src="assets/img/comodidad_dia.jfif" alt="Comodidad todo el dia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x300?text=Comodidad+Total';">
+                        <span class="absolute top-2 right-2 bg-emerald-700 text-white text-[10px] font-bold px-2 py-1 rounded-md shadow">Confort Pro</span>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Comodidad todo el día</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-4">Materiales ultraligeros y armazones ergonómicos para cero presión facial.</p>
+                </div>
+                <a href="https://wa.me/593985580778?text=Hola,%20deseo%20más%20información%20sobre%20lentes%20de%20comodidad%20todo%20el%20día" target="_blank" class="w-full bg-rose-50 text-rose-800 hover:bg-rose-800 hover:text-white font-medium text-xs py-2.5 rounded-lg transition text-center block">
+                    Cotizar Opción
+                </a>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="group bg-white border border-gray-100 rounded-2xl p-4 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-48 rounded-xl overflow-hidden mb-4 bg-rose-50 relative">
+                        <img src="assets/img/astigmatismo.jfif" alt="Tengo Astigmatismo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x300?text=Astigmatismo';">
+                        <span class="absolute top-2 right-2 bg-purple-700 text-white text-[10px] font-bold px-2 py-1 rounded-md shadow">Alta Prescripción</span>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Tengo Astigmatismo</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-4">Corrección óptica de alta precisión para una visión totalmente nítida y sin distorsión.</p>
+                </div>
+                <a href="https://wa.me/593985580778?text=Hola,%20deseo%20más%20información%20sobre%20lentes%20para%20astigmatismo" target="_blank" class="w-full bg-rose-50 text-rose-800 hover:bg-rose-800 hover:text-white font-medium text-xs py-2.5 rounded-lg transition text-center block">
+                    Cotizar Opción
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS Y AGENDAR CITA -->
+    <section class="bg-rose-50/50 py-16 px-6 border-t border-b border-rose-100 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h3 class="text-2xl font-bold text-rose-950 mb-4">Agenda tu Cita Computarizada</h3>
+            <p class="text-gray-600 text-sm mb-6">Examen visual optométrico - Despistaje de problemas visuales - Lentes de contacto - Entrega de productos</p>
+            <a href="https://wa.me/593985580778?text=Hola,%20deseo%20agendar%20una%20cita%20en%20la%20óptica" target="_blank" class="bg-rose-800 text-white font-medium px-8 py-3.5 rounded-full hover:bg-rose-900 transition shadow-lg inline-block">
+                RESERVAR CITA POR WHATSAPP
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER DE 3 COLUMNAS -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10">
+            
+            <!-- Columna 1: Logo, Teléfono y Redes Sociales -->
+            <div>
+                <img src="assets/img/logo.svg" alt="Óptica USA-EC" class="h-24 w-auto object-contain mb-4 filter brightness-200" onerror="this.onerror=null; this.style.display='none';">
+                <p class="text-gray-400 text-xs mb-4">Clemente Ballén entre Escobedo y Chimborazo, Guayaquil - Ecuador</p>
+                <p class="text-sm font-semibold text-white mb-3"><i class="fa-solid fa-phone text-rose-500 mr-2"></i> +593 98 558 0778</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="https://www.tiktok.com/@optica_usaec" target="_blank" class="bg-gray-800 hover:bg-rose-800 text-white h-9 w-9 rounded-full flex items-center justify-center transition" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/optica_usaec" target="_blank" class="bg-gray-800 hover:bg-rose-800 text-white h-9 w-9 rounded-full flex items-center justify-center transition" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/opticausaec/" target="_blank" class="bg-gray-800 hover:bg-rose-800 text-white h-9 w-9 rounded-full flex items-center justify-center transition" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Páginas y Noticias de Oftalmología -->
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 border-b border-gray-800 pb-2">Navegación e Interés</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="inicio.html" class="hover:text-rose-400 transition"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Inicio</a></li>
+                    <li><a href="nosotros.html" class="hover:text-rose-400 transition"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Nosotros</a></li>
+                    <li><a href="catalogo.html" class="hover:text-rose-400 transition"><i class="fa-solid fa-angle-right text-xs mr-2 text-rose-500"></i> Catálogo</a></li>
+                    <li><a href="noticias.html" class="hover:text-rose-400 transition font-medium text-rose-300"><i class="fa-solid fa-newspaper text-xs mr-2 text-rose-500"></i> Noticias de Oftalmología</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Formas de Pago (Tarjetas de Crédito y Débito) -->
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 border-b border-gray-800 pb-2">Formas de Pago</h4>
+                <p class="text-gray-400 text-xs mb-4">Aceptamos todas las tarjetas de crédito y débito locales e internacionales:</p>
+                <div class="grid grid-cols-4 gap-3 text-2xl text-gray-300">
+                    <div class="bg-gray-800 p-2.5 rounded-lg flex items-center justify-center" title="Visa">
+                        <i class="fa-brands fa-cc-visa text-blue-400"></i>
+                    </div>
+                    <div class="bg-gray-800 p-2.5 rounded-lg flex items-center justify-center" title="Mastercard">
+                        <i class="fa-brands fa-cc-mastercard text-red-400"></i>
+                    </div>
+                    <div class="bg-gray-800 p-2.5 rounded-lg flex items-center justify-center" title="American Express">
+                        <i class="fa-brands fa-cc-amex text-blue-300"></i>
+                    </div>
+                    <div class="bg-gray-800 p-2.5 rounded-lg flex items-center justify-center" title="Discover">
+                        <i class="fa-brands fa-cc-discover text-orange-400"></i>
+                    </div>
+                </div>
+                <p class="text-[11px] text-gray-500 mt-4">Pagos seguros directos en local y diferidos disponibles.</p>
+            </div>
+
+        </div>
+
+        <div class="container mx-auto max-w-6xl border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
+            <p>&copy; 2026 Óptica USA-EC. Todos los derechos reservados. Diseñado por: <a href="https://www.victor-farfan.com/" target="_blank" >Victor Farfán</a>
+            </p>
+        </div>
+    </footer>
+    <script src="assets/js/menu_responsive.js"></script>
+</body>
+</html>
